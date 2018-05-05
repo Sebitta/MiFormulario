@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class terceraactividad extends AppCompatActivity {
 
@@ -14,7 +15,7 @@ public class terceraactividad extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terceraactividad);
 
-        btnmenu = (Button) findViewById(R.id.buttonInicio2);
+        btnmenu = (ImageButton) findViewById(R.id.imageButtonInicio1);
 
         btnmenu.setOnClickListener(new View.OnClickListener() {
             @Override

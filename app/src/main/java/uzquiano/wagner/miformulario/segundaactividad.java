@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -20,7 +21,7 @@ public class segundaactividad extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segundaactividad);
 
-        btnmenu = (Button) findViewById(R.id.buttonInicio2);
+        btnmenu = (ImageButton) findViewById(R.id.imageButtonInicio);
 
         btnmenu.setOnClickListener(new View.OnClickListener() {
                                    @Override
@@ -30,7 +31,7 @@ public class segundaactividad extends AppCompatActivity {
                                    }
                                });
 
-        btn = (Button) findViewById(R.id.buttonnext);
+        btn = (Button) findViewById(R.id.buttonNext2);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +41,7 @@ public class segundaactividad extends AppCompatActivity {
             }
         });
 
-        mitexto = (TextView) findViewById(R.id.textsalida);
+        mitexto = (TextView) findViewById(R.id.textViewEdad);
         miseek = (SeekBar) findViewById(R.id.seekBar2);
 
         mitexto.setText("años:" + miseek.getProgress());
@@ -48,7 +49,7 @@ public class segundaactividad extends AppCompatActivity {
         miseek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                mitexto.setText("años: " + progress);
+                mitexto.setText(progress + "años");
             }
 
             @Override

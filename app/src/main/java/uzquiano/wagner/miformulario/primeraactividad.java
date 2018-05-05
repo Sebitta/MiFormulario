@@ -14,7 +14,7 @@ public class primeraactividad extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primeraactividad);
 
-        btn = (Button) findViewById(R.id.buttonmain);
+        btn = (Button) findViewById(R.id.buttonNext);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -66,15 +66,20 @@
                 android:layout_height="wrap_content" android:id="@+id/radioButtonDespedida" android:layout_weight="1"
                 android:textSize="24sp"/>
     </RadioGroup>
+
     <TextView
-            android:text="000"
-            android:layout_width="81dp"
-            android:layout_height="40dp"
-            android:id="@+id/textViewEdad" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.574" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.626" android:textSize="30sp"
-            android:textColor="@android:color/background_dark"/>
+        android:id="@+id/textViewEdad"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:text="000"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
     <TextView
             android:text="Edad: "
             android:layout_width="81dp"
