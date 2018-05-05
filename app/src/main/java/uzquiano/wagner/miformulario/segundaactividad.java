@@ -20,7 +20,7 @@ public class segundaactividad extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segundaactividad);
 
-        btnmenu = (Button) findViewById(R.id.buttonmenu);
+        btnmenu = (Button) findViewById(R.id.buttonInicio2);
 
         btnmenu.setOnClickListener(new View.OnClickListener() {
                                    @Override

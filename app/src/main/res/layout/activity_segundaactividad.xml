@@ -1,94 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".segundaactividad">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".segundaactividad">
 
-    <RadioGroup
-        android:id="@+id/radioGroup2"
-        android:layout_width="177dp"
-        android:layout_height="142dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457">
-
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Saludo" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Despedida" />
-    </RadioGroup>
-
+    <ImageButton
+            android:layout_width="71dp"
+            android:layout_height="62dp" app:srcCompat="@drawable/ic_action_home1"
+            android:id="@+id/imageButtonInicio" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" android:background="@android:color/holo_orange_dark"/>
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="176dp"
-        android:layout_height="wrap_content"
-        android:text="Seleccione:"
-        android:textColor="@android:color/background_dark"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.572"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+            android:id="@+id/textViewOpcion"
+            android:layout_width="295dp"
+            android:layout_height="40dp"
+            android:text="Seleccione una opción:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="72dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.072"/>
 
     <SeekBar
-        android:id="@+id/seekBar2"
-        android:layout_width="170dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.588"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/seekBar2"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:max="100"/>
 
     <Button
-        android:id="@+id/buttonnext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Siguiente"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
-        app:layout_constraintVertical_bias="0.902" />
+            android:id="@+id/buttonNext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+            app:layout_constraintVertical_bias="0.902" android:background="@android:color/holo_green_light"/>
 
-    <Button
-        android:id="@+id/buttonmenu"
-        android:layout_width="99dp"
-        android:layout_height="wrap_content"
-        android:text="Volver al menu"
-        app:layout_constraintBottom_toTopOf="@+id/buttonmenu"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
-
+    <RadioGroup
+            android:layout_width="243dp"
+            android:layout_height="111dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.503" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.377">
+        <RadioButton
+                android:text="Saludo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButtonSaludo" android:layout_weight="1"
+                android:textSize="24sp"/>
+        <RadioButton
+                android:text="Despedida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButtonDespedida" android:layout_weight="1"
+                android:textSize="24sp"/>
+    </RadioGroup>
     <TextView
-        android:id="@+id/textsalida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/buttonmenu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
-        app:layout_constraintVertical_bias="0.172" />
+            android:text="000"
+            android:layout_width="81dp"
+            android:layout_height="40dp"
+            android:id="@+id/textViewEdad" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.574" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.626" android:textSize="30sp"
+            android:textColor="@android:color/background_dark"/>
+    <TextView
+            android:text="Edad: "
+            android:layout_width="81dp"
+            android:layout_height="40dp"
+            android:id="@+id/textViewEdad2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.194" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.626" android:textSize="30sp"
+            android:textColor="@android:color/background_dark"/>
 </android.support.constraint.ConstraintLayout>

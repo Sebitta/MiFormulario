@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".terceraactividad">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".terceraactividad">
 
     <Button
-        android:id="@+id/buttonmenu"
-        android:layout_width="105dp"
-        android:layout_height="wrap_content"
-        android:text="Volver al menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
-
+            android:id="@+id/buttonCompartir"
+            android:layout_width="206dp"
+            android:layout_height="49dp"
+            android:text="Compartir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.681" app:layout_constraintHorizontal_bias="0.365"/>
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.365" />
+            android:id="@+id/buttonToast2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prueba con Toast"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.347"/>
+    <ImageView
+            android:layout_width="49dp"
+            android:layout_height="50dp" app:srcCompat="@android:drawable/ic_menu_share"
+            android:id="@+id/imageViewShare"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.847"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.683"/>
+    <ImageButton
+            android:layout_width="71dp"
+            android:layout_height="62dp" app:srcCompat="@drawable/ic_action_home1"
+            android:id="@+id/imageButtonInicio1" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" android:background="@android:color/holo_orange_dark"/>
 </android.support.constraint.ConstraintLayout>
