@@ -15,6 +15,7 @@ import android.widget.Toast;
 public class segundaactividad extends AppCompatActivity {
 
     private TextView mitexto;
+    private TextView nombre;
     private SeekBar miseek;
 
     private View btnmenu;
@@ -40,6 +41,7 @@ public class segundaactividad extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(segundaactividad.this, primeraactividad.class);
+                intent.putExtra("Nombres", nombre1);
                 startActivity(intent);
             }
         });
@@ -65,7 +67,7 @@ public class segundaactividad extends AppCompatActivity {
 
         mitexto = (TextView) findViewById(R.id.textViewEdad);
         miseek = (SeekBar) findViewById(R.id.seekBar2);
-
+        nombre = (TextView) findViewById(R.id.textViewnombre1);
         mitexto.setText("0 años");
 
         miseek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -73,6 +75,7 @@ public class segundaactividad extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 mitexto.setText(progress + " años");
                 //mitexto.setText(nombre1);
+                nombre.setText(nombre1);
             }
 
             @Override
