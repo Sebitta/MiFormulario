@@ -25,13 +25,15 @@ public class segundaactividad extends AppCompatActivity {
     private RadioButton radioButton;
 
     private String nombre1;
+    private String opcion;
+    private String edad ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segundaactividad);
 
-
+        edad = "0";
         nombre1 = getIntent().getStringExtra("Nombre");
 
         btnmenu = (ImageButton) findViewById(R.id.imageButtonInicio);
@@ -41,7 +43,6 @@ public class segundaactividad extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(segundaactividad.this, primeraactividad.class);
-                intent.putExtra("Nombres", nombre1);
                 startActivity(intent);
             }
         });
@@ -51,16 +52,23 @@ public class segundaactividad extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 int selectedId = radioGroup.getCheckedRadioButtonId();
 
-                // find the radiobutton by returned id
+
                 radioButton = (RadioButton) findViewById(selectedId);
 
-                Toast.makeText(segundaactividad.this,
-                        radioButton.getText(), Toast.LENGTH_SHORT).show();
+                opcion = (String) radioButton.getText();
+
+                //Toast.makeText(segundaactividad.this,nombre1+edad+opcion, Toast.LENGTH_SHORT).show();
 
 
                 Intent intent = new Intent(segundaactividad.this, terceraactividad.class);
+                intent.putExtra("Nombres", nombre1);
+                intent.putExtra("Opciones", opcion);
+                intent.putExtra("Edades", edad);
+
+
                 startActivity(intent);
             }
         });
@@ -75,7 +83,9 @@ public class segundaactividad extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 mitexto.setText(progress + " años");
                 //mitexto.setText(nombre1);
-                nombre.setText(nombre1);
+                edad = String.valueOf(progress);
+                nombre.setVisibility(View.INVISIBLE);
+                //nombre.setText(edad);
             }
 
             @Override
